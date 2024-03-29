@@ -27,14 +27,14 @@ body {
 .main-content-container {
   display: flex;
 }
-.main-content {
+.primary-content {
   flex: 2;
   margin: 30px;
   margin-left: 10rem;
 }
 .container {
     height: 400px;
-    background-color: #acd7e779;
+    background-color: #E5E5FA;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -109,4 +109,19 @@ h1, h2 {
 blockquote {
   font-style: italic;
   color: #135e7c;
+}
+.sr-only {
+  position: absolute;
+  left: 10000px;
+  top: auto;
+  width: 1px;
+  overflow: hidden;
+}
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
 }
